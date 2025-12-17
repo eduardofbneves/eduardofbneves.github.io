@@ -1,4 +1,11 @@
-viz1740506745131
-{
-    height: 100vh;
+
+:root {
+  --bg: #0b0c10;
+  --panel: #12141a;
+  --text: #e6e6e6;
+  --muted: #a0a6b2;
+  --brand: #4f8cff;
+  --brand-2: #8a5cff;
+  --border: #1f2430;
+  --chip: #1a1f2b  --chip: #1a1f2b;
 }

@@ -1,0 +1,40 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboards · Eduardo Neves</title>
+  <link rel="icon" href="favicon.svg" typeJS API (v1) for export dialogs -->
+  https://public.tableau.com/javascripts/api/viz_v1.js</script>
+  dashboards.js</script>
+</head>
+<body>
+  <!-- ...header/nav consistent with your site... -->
+
+  <main id="main" tabindex="-1">
+    <section class="section" aria-labelledby="dash-title">
+      <div class="container">
+        <h1 id="dash-title">Dashboards</h1>
+        <p class="lead">Interactive Tableau dashboards. Use the export buttons to download PDF or image snapshots.</p>
+
+        <div class="cta" role="group" aria-label="Export options">
+          <button class="btn" id="exportPDF">Generate PDF</button>
+          <button class="btn" id="exportImage">Generate Image</button>
+        </div>
+
+        <div class="card" style="padding:0; overflow:hidden;" aria-label="Dashboard embed">
+          <div id="vizContainer" class="tableau-embed"
+               data-url="https://public.tableau.com/views/WORKBOOK_NAME/SHEET_NAME"
+               data-toolbar="yes" data-tabs="no" data-language="en-GB"
+               style="width:100%; height:60vh; min-height:480px;"></div>
+        </div>
+
+        <p class="form-note">Paste your Tableau Public share URL in the <code>data-url</code> above, or embed your full snippet inside <code>#vizContainer</code>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">...</footer>
+  script.js</script>
+</</body>
