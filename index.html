@@ -1,15 +1,91 @@
 
-<header class="site-header" role="banner">
-  <nav class="nav" aria-label="Primary">
-    <a href="#home" class="logo" ariaan>Eduardo Neves</span>
-    </a>
-    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
-    <ul class="nav-links">
-      <li>#aboutAbout</a></li>
-      <li>#skillsSkills</a></li>
-      <li>#projectsProjects</a></li>
-      <li>#contactContact</a></li>
-      <li>#dashboardsDashboards</a></li>
-    </ul>
-  </nav>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduardo Neves | Data Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Primary Navigation">
+        <img src="favicon.png" alt="eduardo_neves.png">
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" title="Menu">☰</button>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="html/about.html">About</a></li>
+        <li>#skillsSkills</a></li>
+        <li>#projectsProjects</a></li>
+        <li><a href="dashboards.html">Dashboards</a></li>
+        <li><a href="html/contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="section hero" aria-labelledby="intro-title">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1 id="intro-title">Turning Data into Decisions</h1>
+        <p class="subtitle">Hi, I'm <strong>Eduardo Neves</strong> — Associate Data Analyst</p>
+        design trustworthy datasets, pragmatic ETL, and clear dashboards so teams ship faster and operate smarter.</p>
+
+        <!-- KPIs -->
+        <div class="kpis" aria-label="Key highlights">
+          <div class="kpi">
+            <span class="num" data-count="24">24</span>
+            <span class="label">Dashboards shipped</span>
+          </div>
+          <div class="kpi">
+            <span class="num" data-count="99.95">99.95%</span>
+            <span class="label">Data freshness SLA</span>
+          </div>
+          <div class="kpi">
+            <span class="num" data-count="12">12</span>
+            <span class="label">Automation workflows</span>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta">
+          <a href="#projects" class=""></a>          
+          <a href="dashboards.html" class=""></a>
+          <!--YOUR_CV_LINK.pdfDownload CV</a> -->
+        </div>
+
+        <!-- Social Links -->
+        <ul class="socials" aria-label="Social links">
+          <li><a href="https://github.com/YOUR_GITHUB" target="_blank"></a> </li>
+          <li><a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener">LinkedIn</a> </li>
+        </ul>
+      </div>
+
+      <!-- Hero Photo -->
+      <div class="hero-photo" aria-hidden="true">
+        <figure class="avatar-figure">
+          <img src="YOUR_PHOTO.jpg" alt="Portrait of="visually-hidden">Portrait of Eduardo Neves</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Section -->
+  <section id="featured" class="section" aria-labelledby="featured-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="featured-title">Featured Work</h2>
+        <p class="muted">A couple of representative projects. More below.</p>
+      </div>
+      <div class="grid">
+        <!-- Featured cards go here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="toTop" class="button" aria  <button id="toTop" class="button" aria-label="Back to top">↑</button>
+</body>
