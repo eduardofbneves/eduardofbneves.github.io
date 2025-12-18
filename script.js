@@ -69,4 +69,6 @@ const PROJECTS = [
       const el = document.getElementById(id);
       if(el){ e.preventDefault(); el.scrollIntoView({ behavior: 'smooth' }); }
     });
-   });
+   })
+  }
+)
