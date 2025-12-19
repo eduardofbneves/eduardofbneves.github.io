@@ -69,14 +69,22 @@
 .item a:hover {
   color: #2258c3;
 }
-/*
+
 body {
-  background: linear-gradient(0deg, #2258c3 10%, #fd2df3 90%);
+  background: #0b0c10;
   height: 100vh;
   margin: 0;
   padding-top: 10px;
 }
-*/
+
+p {
+  color: #e6e6e6;
+}
+
+h1{
+  color: #e6e6e6;
+}
+
 button {
   background-color: #2258c3;
   color: white;

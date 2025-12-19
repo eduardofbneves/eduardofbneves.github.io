@@ -2,37 +2,169 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
-    <title>Dashboards - Eduardo Neves</title>
+    <link rel="stylesheet" href="about.css">
+    <title>About - Eduardo Neves</title>
     <header class="site-header" role="banner">
-    <nav class="nav" aria-label="Primary Navigation">
-        <a href="index.html"><img src="favicon.png" alt="eduardo_neves.png"></a>
-      <div class="nav-actions">
-        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
-        <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation" title="Menu">☰</button>
-      </div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="html/about.html">About</a></li>
-        <li>#skillsSkills</a></li>
-        <li>#projectsProjects</a></li>
-        <li><a href="dashboards.html">Dashboards</a></li>
-        <li><a href="html/contacts.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+        <nav class="navbar" aria-label="Primary Navigation">
+            <a href="index.html">
+                <img src="images/icon_edu.png" alt="eduardo_neves.png" class="logo">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li class="nav_item"><a href="about.html">About</a></li>
+                <li class="nav_item"><a href="portfolio.html">Portfolio</a></li>
+                <li class="nav_item"><a href="dashboards.html">Dashboards</a></li>
+                <li class="nav_item"><a href="contacts.html">Contacts</a></li>
+            </ul>
+            <button type="contact_button" id="download_cv">Download CV</button>
+        </nav>
+    </header>
 
 </head>
 
 <body>
 
-  <h1>Add Title Here</h1>
+  <!-- Meta -->
+  <meta name="about" content="About Eduardo Neves — Associate Data & AI Engineer focused on trustworthy datasets, pragmatic ETL, and clear dashboards." />
+  <link rel="iconlink rel="preconnect" href="https://fonts.gstaticnts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" relcripts/>
+</head>
+  <main id="main" class="container">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="about-title">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1 id="about-title">About Eduardo</h1>
+          <p class="lead">
+            I’m an Associate Data Analyst based in Vila Nova de Gaia. I design <strong>trustworthy datasets</strong>,
+            build <strong>pragmatic ETL</strong>, and craft <strong>clear dashboards</strong> so operators and product teams
+            can make confident decisions—fast.
+          </p>
+          <ul class="quick-facts" aria-label="Quick highlights">
+            <li><span class="num" data-count="24">24</span> dashboards shipped</li>
+            <li><span class="num" data-count="99.95">99.95%</span> data freshness SLA</li>
+            <li><span class="num" data-count="12">12</span> automation workflows</li>
+          </ul>
 
-    <button id = "exportPDF">Generate PDF</button>
-    <button id = "exportImage">Generate Image</button>
+          <figure class="hero-photo">
+            <!-- Replace with your portrait -->
+            <img src="images/perfil.jpg" alt="Profile of Eduardo Neves" class="visually-hidden">
+            </img>
+            <figcaption>Portrait of Eduardo Neves</figcaption>
+          </figure>
+        </div>
+    </section>
+
+    <!-- Bio -->
+    <section class="card" aria-labelledby="bio-title">
+      <h2 id="bio-title">Bio</h2>
+      <p>
+        I care deeply about reliable pipelines and respectful data design. My work centers on
+        <strong>QoS datasets</strong>, <strong>smart traffic light integration</strong>, and making data
+        <em>explainable by default</em>. I prefer simple, observable ETL over fragile complexity, and dashboards that
+        trade noise for clarity. I’m happiest when data helps teams ship faster with fewer surprises.
+      </p>
+      <p>
+        Outside the terminal, you’ll find me tuning metrics definitions, reviewing schema changes, or drying out flaky
+        cron jobs. I believe in guardrails, small diffs, and making problems visible early.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="card" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills & Tools</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Data</h3>
+          <ul>
+            <li>SQL (analytics engineering)</li>
+            <li>ETL / ELT (dbt, Airflow, Azure Data Factory)</li>
+            <li>Data modeling (star/snowflake)</li>
+            <li>Observability (freshness, volume, schema tests)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Analytics</h3>
+          <ul>
+            <li>Power BI, Excel (advanced), DAX</li>
+            <li>Python (pandas, matplotlib)</li>
+            <li>Experimentation & KPIs</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Platforms</h3>
+          <ul>
+            <li>Azure (Synapse, Storage, Functions)</li>
+            <li>Git & CI</li>
+            <li>APIs & webhooks</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="card" aria-labelledby="timeline-title">
+      <h2 id="timeline-title">Experience</h2>
+      <ol class="timeline" aria-label="Career timeline">
+        <li>
+          <div class="dot" aria-hidden="true"></div>
+          <div class="content">
+            <h3>Associate Data Analyst</h3>
+            <p class="meta">2024–Present • Vila Nova de Gaia</p>
+            <p>
+              Built QoS datasets, automated freshness checks, and delivered operational dashboards for traffic systems,
+              including smart traffic light integration to improve throughput and reduce delays.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="dot" aria-hidden="true"></div>
+          <div class="content">
+            <h3>Data Projects (freelance & personal)</h3>
+            <p class="meta">2023–2024</p>
+            <p>
+              Modeled data for logistics and support flows, created ETL jobs with alerts, and produced decision-oriented
+              visuals with Power BI and Python.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Featured Metrics 
+    <section class="card" aria-labelledby="metrics-title">
+      <h2 id="metrics-title">Impact metrics</h2>
+      <div class="metrics">
+        <div class="metric">
+          <span class="metric-label">Data freshness</span>
+          <span class="metric-value">99.95%</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Dashboards shipped</span>
+          <span class="metric-value">24</span>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Automation workflows</span>
+          <span class="metric-value">12</span>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <!-- Contact CTA -->
+    <section class="cta card" aria-labelledby="cta-title">
+      <h2 id="cta-title">Let’s build something useful</h2>
+      <p>If you need reliable data pipelines or decision-ready dashboards, I’d love to help.</p>
+      <div class="cta-row">
+        mailto:your.email@example.comEmail me</a>
+        <a class="btn secondary" href="https://www.linkedin.com/in/Y ↗"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Eduardo Neves. All rights reserved.</small>
+  </footer>
 
 
-    <div id="vizContainer"></div>
-
-    <script src="./app.js"></script>
 
 </body>
 

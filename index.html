@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eduardo Neves | Data Engineer</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
   <script src="script.js"></script>
   <link rel="icon" type="image/x-icon" href="images/icon_edu.png">
 </head>
@@ -26,65 +27,159 @@
   </nav>
   </header>
 
-  <section id="home" class="section hero" aria-labelledby="intro-title">
-    <div class="container hero-grid">
-      <div class="hero-text">
-        <h1 id="intro-title">Turning Data into Decisions</h1>
-        <p class="subtitle">Hi, I'm <strong>Eduardo Neves</strong> — Associate Data Engineer</p>
-        design trustworthy datasets, pragmatic ETL, and clear dashboards so teams ship faster and operate smarter.</p>
 
-        <!-- KPIs -->
-        <div class="kpis" aria-label="Key highlights">
-          <div class="kpi">
-            <span class="num" data-count="24">24</span>
-            <span class="label">Dashboards shipped</span>
+<section class="hero" aria-labelledby="intro">
+      <div class="hero-grid">
+        <div>
+          <h1 id="intro">Turning ideas into reliable systems</h1>
+          <p class="subtitle">
+            Hi, I’m <strong>Eduardo Neves</strong> — <span id="roleText">Engineer & Builder</span>
+          </p>
+          <p class="lead">
+            I build trustworthy data flows, pragmatic automations, and clear interfaces so teams ship faster and operate smarter.
+          </p>
+
+          <div class="kpis" aria-label="Key highlights">
+            <div class="kpi"><span class="num" data-count="24">24</span><span> features delivered</span></div>
+            <div class="kpi"><span class="num" data-count="99.95">99.95%</span><span> uptime / freshness</span></div>
+            <div class="kpi"><span class="num" data-count="12">12</span><span> automation workflows</span></div>
           </div>
-          <div class="kpi">
-            <span class="num" data-count="99.95">99.95%</span>
-            <span class="label">Data freshness SLA</span>
-          </div>
-          <div class="kpi">
-            <span class="num" data-count="12">12</span>
-            <span class="label">Automation workflows</span>
+
+          <div class="cta">
+            #projectsView Projects</a>
+            <a href="dashboards.htmloards</a>
+            YOUR_CV_LINK.pdfDownload CV</a>
           </div>
         </div>
 
-        <!-- Call to Action -->
-        <div class="cta">
-          <a href="#projects" class=""></a>          
-          <a href="dashboards.html" class=""></a>
-          <!--YOUR_CV_LINK.pdfDownload CV</a> -->
-        </div>
-
-        <!-- Social Links -->
-        <ul class="socials" aria-label="Social links">
-          <li><a href="https://github.com/YOUR_GITHUB" target="_blank"></a> </li>
-          <li><a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener">LinkedIn</a> </li>
-        </ul>
-      </div>
-
-      <!-- Hero Photo -->
-      <div class="hero-photo" aria-hidden="true">
-        <figure class="avatar-figure">
-          <img src="YOUR_PHOTO.jpg" alt="Portrait of="visually-hidden">Portrait of Eduardo Neves</figcaption>
+        <figure class="hero-photo" aria-hidden="true">
+          <img src="assets/portrait.jpg" alt="Portraitass="visually-hidden">Portrait of Eduardo Neves</figcaption>
         </figure>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Featured Section -->
-  <section id="featured" class="section" aria-labelledby="featured-title">
-    <div class="container">
+    <!-- FEATURED PROJECTS -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
       <div class="section-header">
-        <h2 id="featured-title">Featured Work</h2>
+        <h2 id="projects-title">Featured Projects</h2>
         <p class="muted">A couple of representative projects. More below.</p>
       </div>
-      <div class="grid">
-        <!-- Featured cards go here -->
-      </div>
-    </div>
-  </section>
 
-  <!-- Back to Top Button -->
-  <button id="toTop" class="button" aria  <button id="toTop" class="button" aria-label="Back to top">↑</button>
+      <div class="grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="card-media">Screenshot/Chart</div>
+          <div class="card-body">
+            <h3>Smart Traffic Lights Integration</h3>
+            <p>Integrated signal telemetry and built an operations view to monitor throughput and delays.</p>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">APIs</span><span class="tag">Azure</span><span class="tag">Power BI</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            https://github.com/YOUR_GITHUB/traffic-lightsRepo ↗</a>
+            #Live (internal)</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="card-media">Screenshot/Chart</div>
+          <div class="card-body">
+            <h3>Telemetry & QoS Platform</h3>
+            <p>Modeled QoS signals with SLOs and alerting for freshness, volume, and schema changes.</p>
+            <div class="tags">
+              <span class="tag">SQL</span><span class="tag">dbt</span><span class="tag">Airflow/ADF</span><span class="tag">Observability</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a class="btn secondary" href="https://github.com/YOUR_GITHUB/qos-platform" target="_blankv>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card-media">Screenshot/Chart</div>
+          <div class="card-body">
+            <h3>Ops Automation Pack</h3>
+            <p>12 workflows for schema diffs, anomaly detection, and guarded backfills with approvals.</p>
+            <div class="tags">
+              <span class="tag">Azure Functions</span><span class="tag">Webhooks</span><span class="tag">CI</span>
+            </div>
+          </div>
+          <div class="card-actions">
+            <a classgithub.com/YOUR_GITHUB/ops-automationRepo ↗</a>
+            <a class="btn outline" href="#" aria-disabled="     </div>
+    </section>
+
+    <!-- DASHBOARDS -->
+    <section id="dashboards" class="section" aria-labelledby="dashboards-title">
+      <div class="section-header">
+        <h2 id="dashboards-title">Dashboards</h2>
+        <p class="muted">Decision-focused and legible.</p>
+      </div>
+      <div class="dash-grid">
+        <article class="card">
+          <div class="card-media">Ops KPI Overview</div>
+          <div class="card-body">
+            <h3>Operational KPIs</h3>
+            <p>Daily ops view across throughput, delay, and health checks.</p>
+          </div>
+          <div class="card-actions">
+            dashboards.htmlOpen dashboards</a>
+            dashboards.html#galleryGallery</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-media">Data Health</div>
+          <div class="card-body">
+            <h3>Data Health</h3>
+            <p>Freshness, volume, and schema change monitors with alerting.</p>
+          </div>
+          <div class="card-actions">
+            dashboards.html#healthOpen health view</a>
+            dashboards.html#aboutAbout this</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT PREVIEW -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="section-header"><h2 id="about-title">About</h2></div>
+      <div class="about-preview">
+        <div>
+          <p>
+            I value simple, observable systems and guardrails that prevent surprises—especially around telemetry, QoS signals,
+            and operations visibility.
+          </p>
+          <div class="cta">
+            about.htmlRead full bio</a>
+            YOUR_CV_LINK.pdfDownload CV</a>
+          </div>
+        </div>
+        assets/portrait.jpg
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="section-header">
+        <h2 id="contact-title">Get in touch</h2>
+        <p class="muted">Let’s build something useful.</p>
+      </div>
+      <div class="cta">
+        mailto:your.email@example.comEmail me</a>
+        https://www.linkedin.com/in/YOUR_LINKEDINLinkedIn ↗</a>
+        https://github.com/YOUR_GITHUBGitHub ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Eduardo Neves. All rights reserved.</small>
+  </footer>
+
+   <button id="toTop" aria-label="Back to top" title="Back to top">↑</button>
+
 </body>
+</html>

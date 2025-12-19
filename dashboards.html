@@ -2,60 +2,50 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="dashboards.js"></script>
     <title>Dashboards - Eduardo Neves</title>
     <header class="site-header" role="banner">
-    <nav class="navbar" aria-label="Primary Navigation">
-      <img src="images/icon_edu.png" alt="eduardo_neves.png" class="logo">
-      <ul class="nav-links" id="navLinks">
-        <li class="nav_item"><a href="about.html">About</a></li>
-        <li class="nav_item">#skillsSkills</a></li>
-        <li class="nav_item">#projectsProjects</a></li>
-        <li class="nav_item"><a href="dashboards.html">Dashboards</a></li>
-        <li class="nav_item"><a href="contacts.html">Contact</a></li>
-      </ul>
-      <button type="contact_button">Contact Me</button>
-    </nav>
-  </header>
-
-    <div class='tableauPlaceholder' id='viz1740506745131' style='position: relative'>
-        <noscript>
-        <a href='#'>
-            <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Is&#47;Israel-PalestineConflictbefore2024&#47;MainViz&#47;1_rss.png' style='border: none' />
-        </a>
-    </noscript>
-    <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-        <param name='embed_code_version' value='3' /> 
-        <param name='site_root' value='' />
-        <param name='name' value='Israel-PalestineConflictbefore2024&#47;MainViz' /><param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Is&#47;Israel-PalestineConflictbefore2024&#47;MainViz&#47;1.png' /> 
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en-GB' />
-    </object>
-</div>                
-<script type='text/javascript'>                    
-    var divElement = document.getElementById('viz1740506745131');                    var vizElement = divElement.getElementsByTagName('object')[0];                    
-    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1127px';}                     
-    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-</script>
-
+        <nav class="navbar" aria-label="Primary Navigation">
+            <a href="index.html">
+                <img src="images/icon_edu.png" alt="eduardo_neves.png" class="logo">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li class="nav_item"><a href="about.html">About</a></li>
+                <li class="nav_item"><a href="about.html">Portfolio</a></li>
+                <li class="nav_item"><a href="dashboards.html">Dashboards</a></li>
+                <li class="nav_item"><a href="contacts.html">Contacts</a></li>
+            </ul>
+            <button type="contact_button" id="download_cv">Download CV</button>
+        </nav>
+    </header>
 </head>
 
 <body>
 
-  <h1>Add Title Here</h1>
+  <h1>Israel-Palestine Conflict Through the Years</h1>
 
-    <button id = "exportPDF">Generate PDF</button>
-    <button id = "exportImage">Generate Image</button>
+  <p>This dahsboard was built in a course on Communication with Data. The main objective was to develop a story through visualizations on a specific theme. THis was the compilation of the most relevant dashboard.</p>
 
-
-    <div id="vizContainer"></div>
-
-    <script src="./app.js"></script>
-
+  <div class='tableauPlaceholder' id='viz1740506745131' style='position: relative'>
+    <noscript>
+      <a href='#'>
+          <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Is&#47;Israel-PalestineConflictbefore2024&#47;MainViz&#47;1_rss.png' style='border: none' />
+      </a>
+    </noscript>
+    <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+      <param name='embed_code_version' value='3' /> 
+      <param name='site_root' value='' />
+      <param name='name' value='Israel-PalestineConflictbefore2024&#47;MainViz' /><param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Is&#47;Israel-PalestineConflictbefore2024&#47;MainViz&#47;1.png' /> 
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-GB' />
+    </object>
+    <script src="dashboard_tableau.js"></script>
+  </div>
+  <!--https://dash.plotly.com/deployment-->                
 </body>
-
 </html>
