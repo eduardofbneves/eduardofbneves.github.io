@@ -171,7 +171,11 @@ a:hover { text-decoration: underline; }
 }
 
 .hero-photo .avatar {
-  width: 220px; height: 220px; object-fit: cover; border-radius: 16px; border: 1px solid var(--border);
+  width: 220px; 
+  height: 220px; 
+  object-fit: cover; 
+  border-radius: 16px; 
+  border: 1px solid var(--border);
   box-shadow: var(--shadow);
 }
 
