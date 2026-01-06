@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about.css">
-    <title>About - Eduardo Neves</title>
-    <header class="site-header" role="banner">
-        <nav class="navbar" aria-label="Primary Navigation">
-            <a href="index.html">
-                <img src="images/icon_edu.png" alt="eduardo_neves.png" class="logo">
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li class="nav_item"><a href="about.html">About</a></li>
-                <li class="nav_item"><a href="portfolio.html">Portfolio</a></li>
-                <li class="nav_item"><a href="dashboards.html">Dashboards</a></li>
-                <li class="nav_item"><a href="contacts.html">Contacts</a></li>
-            </ul>
-            <button type="contact_button" id="download_cv">Download CV</button>
-        </nav>
-    </header>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
+  <title>About - Eduardo Neves</title>
+  <link rel="icon" type="image/x-icon" href="images/icon_edu.png">
+  <script src="script.js"></script>
+  <header class="site-header" role="banner">
+      <nav class="navbar" aria-label="Primary Navigation">
+          <a href="index.html">
+              <img src="images/icon_edu.png" alt="eduardo_neves.png" class="logo">
+          </a>
+          <ul class="nav-links" id="navLinks">
+              <li class="nav_item"><a href="about.html">About</a></li>
+              <li class="nav_item"><a href="portfolio.html">Portfolio</a></li>
+              <li class="nav_item"><a href="dashboards.html">Dashboards</a></li>
+              <li class="nav_item"><a href="contacts.html">Contacts</a></li>
+          </ul>
+          <!--<a href="files/EduardoNeves_CV_EN.pdf" download="EduardoNeves_CV_EN.pdf">-->
+          <button type="contact_button" id="download_cv" onclick="downloadCV()">Open CV</button>
+      </nav>
+  </header>
 
 </head>
 
 <body>
-
   <!-- Meta -->
   <meta name="about" content="About Eduardo Neves — Associate Data & AI Engineer focused on trustworthy datasets, pragmatic ETL, and clear dashboards." />
   <link rel="iconlink rel="preconnect" href="https://fonts.gstaticnts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" relcripts/>
@@ -34,23 +36,20 @@
         <div class="hero-text">
           <h1 id="about-title">About Eduardo</h1>
           <p class="lead">
-            I’m an Associate Data Analyst based in Vila Nova de Gaia. I design <strong>trustworthy datasets</strong>,
-            build <strong>pragmatic ETL</strong>, and craft <strong>clear dashboards</strong> so operators and product teams
-            can make confident decisions—fast.
+            I’m a Data & AI Engineer based in Porto. I am specialized in Python, with a strong background in Data Science and Engineering. Along all the spectrum of the Data realm, I am continusouly working towards <strong>trustworthy datasets</strong>, building <strong>pragmatic ETL</strong>, and craft <strong>clear dashboards</strong>.
           </p>
           <ul class="quick-facts" aria-label="Quick highlights">
-            <li><span class="num" data-count="24">24</span> dashboards shipped</li>
-            <li><span class="num" data-count="99.95">99.95%</span> data freshness SLA</li>
+            <li><span class="num" data-count="7">7</span> Personal and academic projects developed.</li>
+            <li><span class="num" data-count="2">2</span> Years of experience both professional and research.</li>
             <li><span class="num" data-count="12">12</span> automation workflows</li>
           </ul>
-
-          <figure class="hero-photo">
-            <!-- Replace with your portrait -->
-            <img src="images/perfil.jpg" alt="Profile of Eduardo Neves" class="visually-hidden">
-            </img>
-            <figcaption>Portrait of Eduardo Neves</figcaption>
-          </figure>
-        </div>
+      </div>
+      <div id="about-photo">
+        <figure class="hero-photo">
+          <img src="images/perfil.jpg" alt="Profile of Eduardo Neves" class="visually-hidden"></img>
+          <figcaption>Portrait of Eduardo Neves</figcaption>
+        </figure>
+      </div>
     </section>
 
     <!-- Bio -->
@@ -75,25 +74,26 @@
         <div>
           <h3>Data</h3>
           <ul>
-            <li>SQL (analytics engineering)</li>
-            <li>ETL / ELT (dbt, Airflow, Azure Data Factory)</li>
-            <li>Data modeling (star/snowflake)</li>
-            <li>Observability (freshness, volume, schema tests)</li>
+            <li>ETL, DW & Integration (Airflow, Azure, Pentaho, SQL)</li>
+            <li>ML & modelling (scikit-learn, PyTorch, TensorFlow, and Keras)</li>
+            <li>Visualization & EDA using (Matplotlib, Seaborn, Plotly)</li>
           </ul>
         </div>
         <div>
-          <h3>Analytics</h3>
+          <h3>Tools</h3>
           <ul>
-            <li>Power BI, Excel (advanced), DAX</li>
+            <li>Visualization and BI (Tableau, Plotly)</li>
             <li>Python (pandas, matplotlib)</li>
-            <li>Experimentation & KPIs</li>
+            <li>Scripting (Bash)</li>
+            <li>Orchestration and Containerization (Airflow, Docker)</li>
+            <li>Version Control (Git)</li>
           </ul>
         </div>
         <div>
           <h3>Platforms</h3>
           <ul>
-            <li>Azure (Synapse, Storage, Functions)</li>
-            <li>Git & CI</li>
+            <li>Cloud services and infrastructure (AWS)</li>
+            <li>GenAI (Azure, Google)</li>
             <li>APIs & webhooks</li>
           </ul>
         </div>
@@ -151,11 +151,12 @@
 
     <!-- Contact CTA -->
     <section class="cta card" aria-labelledby="cta-title">
-      <h2 id="cta-title">Let’s build something useful</h2>
-      <p>If you need reliable data pipelines or decision-ready dashboards, I’d love to help.</p>
+      <h2 id="cta-title">Get to know me better</h2>
+      <p>Visit the contacts page to see all my links or Open my CV to know more about my professional experience. Both at the top of the page. </p>
       <div class="cta-row">
-        mailto:your.email@example.comEmail me</a>
-        <a class="btn secondary" href="https://www.linkedin.com/in/Y ↗"></a>
+        <a href="#" >
+          Go to top
+        </a>
       </div>
     </section>
   </main>

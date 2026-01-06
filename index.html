@@ -18,168 +18,123 @@
           <img src="images/icon_edu.png" alt="eduardo_neves.png" class="logo">
       </a>
       <ul class="nav-links" id="navLinks">
-      <li class="nav_item"><a href="about.html">About</a></li>
-      <li class="nav_item"><a href="about.html">Portfolio</a></li>
-      <li class="nav_item"><a href="dashboards.html">Dashboards</a></li>
-      <li class="nav_item"><a href="contacts.html">Contacts</a></li>
+        <li class="nav-item"><a href="about.html">About</a></li>
+        <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a href="dashboards.html">Dashboards</a></li>
+        <li class="nav-item"><a href="contacts.html">Contacts</a></li>
       </ul>
       <button type="contact_button" id="download_cv">Download CV</button>
   </nav>
   </header>
 
 
-<section class="hero" aria-labelledby="intro">
+
+
+  <!-- Main -->
+  <main id="main" class="container">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
       <div class="hero-grid">
-        <div>
-          <h1 id="intro">Turning ideas into reliable systems</h1>
-          <p class="subtitle">
-            Hi, I’m <strong>Eduardo Neves</strong> — <span id="roleText">Engineer & Builder</span>
-          </p>
+        <div class="hero-text">
+          <h1 id="hero-title">Building useful things, one small step at a time</h1>
           <p class="lead">
-            I build trustworthy data flows, pragmatic automations, and clear interfaces so teams ship faster and operate smarter.
+            This site gathers a few highlights—short notes about me, selected projects,
+            dashboards I’ve shared, and ways to get in touch.
           </p>
-
-          <div class="kpis" aria-label="Key highlights">
-            <div class="kpi"><span class="num" data-count="24">24</span><span> features delivered</span></div>
-            <div class="kpi"><span class="num" data-count="99.95">99.95%</span><span> uptime / freshness</span></div>
-            <div class="kpi"><span class="num" data-count="12">12</span><span> automation workflows</span></div>
-          </div>
-
           <div class="cta">
-            #projectsView Projects</a>
-            <a href="dashboards.htmloards</a>
-            YOUR_CV_LINK.pdfDownload CV</a>
+            about.htmlAbout</a>
+            portfolio.htmlPortfolio</a>
+            <a href="dashboards.html"</a>
           </div>
         </div>
-
-        <figure class="hero-photo" aria-hidden="true">
-          <img src="assets/portrait.jpg" alt="Portraitass="visually-hidden">Portrait of Eduardo Neves</figcaption>
+        <figure class="hero-media" aria-hidden="true">
+          <img src="assets/portrait"></img>
+          <figcaption class="visually-hidden">Portrait</figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- FEATURED PROJECTS -->
-    <section id="projects" class="section" aria-labelledby="projects-title">
-      <div class="section-header">
-        <h2 id="projects-title">Featured Projects</h2>
-        <p class="muted">A couple of representative projects. More below.</p>
-      </div>
-
+    <!-- Quick sections -->
+    <section class="cards" aria-labelledby="cards-title">
+      <h2 id="cards-title" class="visually-hidden">Site sections</h2>
       <div class="grid">
-        <!-- Card 1 -->
+        <!-- About -->
         <article class="card">
-          <div class="card-media">Screenshot/Chart</div>
           <div class="card-body">
-            <h3>Smart Traffic Lights Integration</h3>
-            <p>Integrated signal telemetry and built an operations view to monitor throughput and delays.</p>
-            <div class="tags">
-              <span class="tag">Python</span><span class="tag">APIs</span><span class="tag">Azure</span><span class="tag">Power BI</span>
-            </div>
+            <h3>About</h3>
+            <p class="muted">A brief intro, principles I work by, and a short timeline.</p>
           </div>
           <div class="card-actions">
-            https://github.com/YOUR_GITHUB/traffic-lightsRepo ↗</a>
-            #Live (internal)</a>
+            about.htmlRead more</a>
           </div>
         </article>
 
-        <!-- Card 2 -->
+        <!-- Portfolio -->
         <article class="card">
-          <div class="card-media">Screenshot/Chart</div>
           <div class="card-body">
-            <h3>Telemetry & QoS Platform</h3>
-            <p>Modeled QoS signals with SLOs and alerting for freshness, volume, and schema changes.</p>
-            <div class="tags">
-              <span class="tag">SQL</span><span class="tag">dbt</span><span class="tag">Airflow/ADF</span><span class="tag">Observability</span>
-            </div>
+            <h3>Portfolio</h3>
+            <p class="muted">A curated list of projects and experiments. Some live, some documented.</p>
           </div>
           <div class="card-actions">
-            <a class="btn secondary" href="https://github.com/YOUR_GITHUB/qos-platform" target="_blankv>
+            portfolio.htmlView portfolio</a>
+          </div>
         </article>
 
-        <!-- Card 3 -->
+        <!-- Dashboards -->
         <article class="card">
-          <div class="card-media">Screenshot/Chart</div>
           <div class="card-body">
-            <h3>Ops Automation Pack</h3>
-            <p>12 workflows for schema diffs, anomaly detection, and guarded backfills with approvals.</p>
-            <div class="tags">
-              <span class="tag">Azure Functions</span><span class="tag">Webhooks</span><span class="tag">CI</span>
-            </div>
+            <h3>Dashboards</h3>
+            <p class="muted">Interactive views and status pages. Focused on clarity and utility.</p>
           </div>
           <div class="card-actions">
-            <a classgithub.com/YOUR_GITHUB/ops-automationRepo ↗</a>
-            <a class="btn outline" href="#" aria-disabled="     </div>
-    </section>
-
-    <!-- DASHBOARDS -->
-    <section id="dashboards" class="section" aria-labelledby="dashboards-title">
-      <div class="section-header">
-        <h2 id="dashboards-title">Dashboards</h2>
-        <p class="muted">Decision-focused and legible.</p>
-      </div>
-      <div class="dash-grid">
-        <article class="card">
-          <div class="card-media">Ops KPI Overview</div>
-          <div class="card-body">
-            <h3>Operational KPIs</h3>
-            <p>Daily ops view across throughput, delay, and health checks.</p>
-          </div>
-          <div class="card-actions">
-            dashboards.htmlOpen dashboards</a>
-            dashboards.html#galleryGallery</a>
+            <a classds.htmlOpen dashboards</a>
           </div>
         </article>
+
+        <!-- Contacts -->
         <article class="card">
-          <div class="card-media">Data Health</div>
           <div class="card-body">
-            <h3>Data Health</h3>
-            <p>Freshness, volume, and schema change monitors with alerting.</p>
+            <h3>Contacts</h3>
+            <p class="muted">Reach out by email or connect on social. I’m happy to chat.</p>
           </div>
           <div class="card-actions">
-            dashboards.html#healthOpen health view</a>
-            dashboards.html#aboutAbout this</a>
+            #contactGet in touch</a>
+          </div>
+        </article>
+
+        <!-- CV -->
+        <article class="card">
+          <div class="card-body">
+            <h3>CV</h3>
+            <p class="muted">A compact summary of experience, tools, and selected work.</p>
+          </div>
+          <div class="card-actions">
+            cv.pdfDownload CV</a>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- ABOUT PREVIEW -->
-    <section id="about" class="section" aria-labelledby="about-title">
-      <div class="section-header"><h2 id="about-title">About</h2></div>
-      <div class="about-preview">
-        <div>
-          <p>
-            I value simple, observable systems and guardrails that prevent surprises—especially around telemetry, QoS signals,
-            and operations visibility.
-          </p>
-          <div class="cta">
-            about.htmlRead full bio</a>
-            YOUR_CV_LINK.pdfDownload CV</a>
-          </div>
-        </div>
-        assets/portrait.jpg
-      </div>
-    </section>
-
-    <!-- CONTACT -->
+    <!-- Contact -->
     <section id="contact" class="section" aria-labelledby="contact-title">
       <div class="section-header">
-        <h2 id="contact-title">Get in touch</h2>
-        <p class="muted">Let’s build something useful.</p>
+        <h2 id="contact-title">Contacts</h2>
+        <p class="muted">Prefer email? That works. Otherwise, you’ll find me on LinkedIn and GitHub.</p>
       </div>
       <div class="cta">
-        mailto:your.email@example.comEmail me</a>
-        https://www.linkedin.com/in/YOUR_LINKEDINLinkedIn ↗</a>
-        https://github.com/YOUR_GITHUBGitHub ↗</a>
+        mailto:your.email@example.comEmail</a>
+        <a class="btn secondary" href="https://wwwinkedIn ↗"></a>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <small>© <span id="year"></span> Eduardo Neves. All rights reserved.</small>
   </footer>
 
-   <button id="toTop" aria-label="Back to top" title="Back to top">↑</button>
+  <!-- Back to top 
+  <button id="toTop" class="to-top" aria-label="Back to top" title="Back to top">↑</button>
+</body>-->
 
-</body>
 </html>

@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eduardo Neves - Portfolio</title>
+  <meta name="description" content="Projects, tools, and experiments by Eduardo Neves." />
+  <link rel="stylesheet" href="style.css">
+  <script src="portfolio.js"></script>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <nav class="navbar" aria-label="Primary Navigation">
+        <a href="index.html">
+            <img src="images/icon_edu.png" alt="eduardo_neves.png" class="logo">
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li class="nav_item"><a href="about.html">About</a></li>
+            <li class="nav_item"><a href="portfolio.html">Portfolio</a></li>
+            <li class="nav_item"><a href="dashboards.html">Dashboards</a></li>
+            <li class="nav_item"><a href="contacts.html">Contacts</a></li>
+        </ul>
+        <button type="contact_button" id="download_cv">Download CV</button>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main id="main" class="container">
+    <!-- Hero / Profile -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1 id="hero-title">Portfolio</h1>
+          <p class="subtitle">
+            Most of my projects are available on <a target="_blank" rel="noopener noreferrer" href="https://github.com/eduardofbneves">Github: eduardofbneves</a>.
+          </p>
+          <h2>Master's Thesis</h2>
+          <h3>On the accuracy of active learning from multiple, imperfect annotators</h3>
+          <div id="thesis-div">
+            
+          </div>
+          <div class="profile-row">
+            <div>
+              <p id="profileName" class="profile-name">Eduardo Neves</p>
+              <p id="profileBio" class="profile-bio muted"></p>
+              <div class="profile-stats">
+                <a id=""></a>
+                <span id="followersCount" class="chip">— followers</span>
+                <span id="reposCount" class="chip">— repos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--
+        <div class="hero-controls card">
+          <form id="filters" class="filters" autocomplete="off">
+            <label>
+              <span class="lbl">Search</span>
+              <input id="searchInput" type="search" placeholder="Find a repository…" />
+            </label>
+            <label>
+              <span class="lbl">Language</span>
+              <select id="languageSelect">
+                <option value="">All</option>
+              </select>
+            </label>
+            <label>
+              <span class="lbl">Sort</span>
+              <select id="sortSelect">
+                <option value="updated">Recently updated</option>
+                <option value="stars">Most stars</option>
+                <option value="name">Name A–Z</option>
+              </select>
+            </label>
+            <button type="button" id="clearBtn" class="btn outline">Clear</button>
+          </form>
+        </div> -->
+      </div>
+    </section>
+
+    <!-- Pinned (optional) 
+    <section id="pinnedSection" class="section" aria-labelledby="pinned-title" hidden>
+      <div class="section-header">
+        <h2 id="pinned-title">Pinned repositories</h2>
+        <p class="muted">Handpicked projects I’m proud of.</p>
+      </div>
+      <div id="pinnedGrid" class="grid"></div>
+    </section>
+    -->
+    <!-- Repos -->
+    <section class="section" aria-labelledby="repos-title">
+      <div class="section-header">
+        <h2 id="repos-title">Repositories</h2>
+        <p class="muted">Public work from my GitHub.</p>
+      </div>
+
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+
+      <div id="reposGrid" class="grid"></div>
+
+      <div class="load-more">
+      </div>
+    </section>
+
+
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Eduardo Neves. All rights reserved.</small>
+  </footer>
+
+  <button id="toTop" aria-label="Back to top" title="Back to top">↑</button>
+</body>
+</html>

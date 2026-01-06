@@ -50,9 +50,18 @@ body {
   color: var(--text);
   line-height: 1.6;
 }
-img { max-width: 100%; display: block; }
-a { color: var(--brand); text-decoration: none; }
-a:hover { text-decoration: underline; }
+img { 
+  max-width: 100%; 
+  display: block; 
+}
+a { 
+  color: var(--brand); 
+  text-decoration: none; 
+}
+
+a:hover { 
+  text-decoration: underline; 
+}
 
 .container {
   max-width: 1100px;
@@ -135,10 +144,13 @@ a:hover { text-decoration: underline; }
   grid-template-columns: 1.2fr 0.8fr;
   gap: 2rem;
   align-items: center;
+  display: flex;
 }
 
 @media (max-width: 900px) {
-  .hero-grid { grid-template-columns: 1fr; }
+  .hero-grid { 
+    grid-template-columns: 1fr; 
+  }
 }
 
 .hero h1 { 
@@ -177,6 +189,13 @@ a:hover { text-decoration: underline; }
   border-radius: 16px; 
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
+}
+
+#about-photo{
+  align-items: center;
+  text-align: center; 
+  margin:0 auto; 
+  padding: 5px;
 }
 
 /* --- Cards --- */
@@ -224,6 +243,7 @@ a:hover { text-decoration: underline; }
 .skills-grid ul { 
   margin: 0; 
   padding-left: 1.2rem; 
+  display: list-item;
 }
 
 @media (max-width: 900px) {
@@ -240,8 +260,7 @@ a:hover { text-decoration: underline; }
 
 .timeline li { 
   position: relative; 
-  padding-left: 1rem; 
-  margin-left: 0.4rem; 
+  padding-left: 1rem;  
   margin-bottom: 1rem; 
 }
 
