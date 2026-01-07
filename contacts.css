@@ -1,21 +1,27 @@
-
-
 #email_icon{
-    width: 60px;
-	max-width: 100%;
-    fill: #b0ab4d;
-    margin-right: 1em;
+  width: 60px;
+  max-width: 100%;
+  fill: var(--brand);
+  margin-right: 1em;
 }
 
 #loc_icon{
-    width: 60px;
-    height: 60px;
-	max-width: 100%;
-    fill: #b0ab4d;
-    margin-right: 1em;
+  width: 60px;
+  height: 60px;
+  max-width: 100%;
+  fill: var(--brand);;
+  margin-right: 1em;
 }
 
-
+.icon-info {
+  color: var(--text);
+  margin: auto;
+  padding: 10px;
+  float: left;
+  text-align: left;
+  position: absolute;
+  margin-left: 80px;
+}
 
 .about_big_info{
     display: flex;
@@ -23,9 +29,6 @@
     text-align: center;
 }
 
-.arch_contact_us_duplicate * {
-  font-family: Nunito, sans-serif;
-}
 
 .arch_contact_us_duplicate .icon-block svg {
   width: 100%;
@@ -73,12 +76,11 @@
 .arch_contact_us_duplicate .responsive-container-block.big-container {
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 70vh;
   padding-top: 0px;
   padding-right: 50px;
   padding-bottom: 0px;
   padding-left: 50px;
-  background-color: #fdfcea;
 }
 
 .arch_contact_us_duplicate .responsive-container-block.container {
@@ -167,34 +169,6 @@
   padding-left: 16px;
 }
 
-.arch_contact_us_duplicate .button {
-  height: 50px;
-  min-width: 240px;
-  font-size: 16px;
-  color: white;
-  border-top-width: 2px;
-  border-right-width: 2px;
-  border-bottom-width: 2px;
-  border-left-width: 2px;
-  border-top-style: none;
-  border-right-style: none;
-  border-bottom-style: none;
-  border-left-style: none;
-  border-top-color: #767676;
-  border-right-color: #767676;
-  border-bottom-color: #767676;
-  border-left-color: #767676;
-  border-image-source: initial;
-  border-image-slice: initial;
-  border-image-width: initial;
-  border-image-outset: initial;
-  border-image-repeat: initial;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 60px;
-  margin-left: 0px;
-  background-color: #b0ab4d;
-}
 
 .arch_contact_us_duplicate .form-wrapper {
   border-bottom-width: 4px;
@@ -212,12 +186,9 @@
   justify-content: space-evenly;
 }
 
-.arch_contact_us_duplicate .input-element {
-  background-color: #f3f2cf;
-}
 
 .arch_contact_us_duplicate .icon-block.social-icon {
-  fill: #b0ab4d;
+  fill: var(--brand);
 }
 
 @media (max-width: 1024px) {
@@ -313,18 +284,6 @@
     padding-left: 20px;
   }
 
-  .arch_contact_us_duplicate .button {
-    width: 100%;
-  }
-
-  .arch_contact_us_duplicate .button {
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 40px;
-    margin-left: 0px;
-    height: 50px;
-  }
-
   .arch_contact_us_duplicate .form-wrapper {
     margin-top: 0px;
     margin-right: 0px;
@@ -338,19 +297,8 @@
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
 
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
-body {
-  margin: 0;
-}
 
 .wk-desk-1 {
   width: 8.333333%;
@@ -549,3 +497,14 @@ body {
     width: 100%;
   }
 }
+
+
+/*
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*/

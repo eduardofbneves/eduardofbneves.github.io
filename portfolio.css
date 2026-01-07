@@ -1,32 +1,12 @@
-span{
-    color: #f9f9f9;
-}
-
-a:hover{
-    text-decoration: underline; 
-}
-
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
+/*----Hero----*/
 .hero {
-  text-align: center;
+  text-align: left;
   margin-bottom: 2rem;
+  align-items: left; 
 }
 
 .hero-text {
     color: #f9f9f9;
-}
-
-.avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
 }
 
 .repos-grid {
@@ -35,12 +15,20 @@ a:hover{
   gap: 1rem;
 }
 
+.grid { 
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 1rem; 
+}
+
 .repo-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  background-color: var(--boxes);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  margin: 1rem;
 }
 
 .repo-card h3 {
@@ -77,3 +65,22 @@ a:hover{
     color: #f9f9f9;
 }
 
+#toTop {
+  position: fixed; 
+  right: 1rem; 
+  bottom: 1rem; 
+  display: none;
+  border: 1px solid var(--text); 
+  background: var(--bg); 
+  color: var(--background);
+  border-radius: 999px; 
+  width: 42px; 
+  height: 42px; 
+  cursor: pointer; 
+  box-shadow: var(--shadow);
+}
+
+#toTop.show { 
+  display: grid; 
+  place-items: center; 
+}

@@ -1,50 +1,60 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contacts.css">
-    <link rel="icon" type="image/x-icon" href="images/icon_edu.png">
-    <title>Dashboards - Eduardo Neves</title>
-    <header class="site-header" role="banner">
-        <nav class="navbar" aria-label="Primary Navigation">
-            <a href="index.html">
-                <img src="images/icon_edu.png" alt="eduardo_neves.png" class="logo">
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li class="nav_item"><a href="about.html">About</a></li>
-                <li class="nav_item"><a href="about.html">Portfolio</a></li>
-                <li class="nav_item"><a href="dashboards.html">Dashboards</a></li>
-                <li class="nav_item"><a href="contacts.html">Contacts</a></li>
-            </ul>
-            <button type="contact_button" id="download_cv">Download CV</button>
-        </nav>
-    </header>
-    <body>
-        <div class="arch_contact_us_duplicate">
+  <title>Eduardo Neves | Data Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contacts.css">
+  <link rel="icon" type="image/x-icon" href="images/icon_edu.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header class="site-header" role="banner">
+    <nav class="navbar" aria-label="Primary Navigation">
+        <a href="index.html">
+            <img src="images/icon_edu.png" alt="eduardo_neves.png" class="logo">
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a href="dashboards.html">Dashboards</a></li>
+          <li class="nav-item"><a href="contacts.html">Contacts</a></li>
+        </ul>
+        <div id="open-cv-div">
+            <a href="files/EduardoNeves_CV_EN.pdf" id="download_cv" target="_blank">Open CV</a>
+        </div>
+    </nav>
+  </header>
+
+  <body>
+    <div class="arch_contact_us_duplicate">
         <div class="responsive-container-block big-container">
             <div class="responsive-container-block container">
             <div class="responsive-cell-block wk-mobile-12 wk-desk-5 wk-tab-10 wk-ipadp-5" id="ih6s">
-                <p class="text-blk section-head">
+                <h1 class="text-blk section-head">
                     Get in touch with me:
-                </p>
-                <p class="text-blk section-subhead">
+                </h1>
+                <h3 class="text-blk section-subhead">
                     Also available in the following platforms.
-                </p>
+                </h3>
             </div>
             <div class="responsive-cell-block wk-ipadp-6 wk-mobile-12 wk-desk-5 wk-tab-9" id="i6df">
                 <div class="about_big_info">
                     <svg xmlns="http://www.w3.org/2000/svg" id="loc_icon" viewBox="0 0 16 16">
                     <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
                     </svg>
-                    <p class="text-blk section-subhead">Porto, Portugal</p>
+                    <p class="icon-info">Porto, Portugal</p>
                 </div>
                 <div class="about_big_info">
                     <a href="mailto:eduardofbneves@gmail.com">
                         <svg viewBox="0 0 8 6" xmlns="http://www.w3.org/2000/svg" id="email_icon">
                             <path d="m0 0h8v6h-8zm.75 .75v4.5h6.5v-4.5zM0 0l4 3 4-3v1l-4 3-4-3z"/>
                         </svg>
+                        <p class="icon-info">eduardofbneves@gmail.com</p>
                     </a>
-                    <p class="text-blk section-subhead">eduardofbneves@gmail.com</p>
                 </div>
                 
                 <div class="social-media-icon-container">
@@ -70,8 +80,13 @@
             </div>
             </div>
         </div>
-        </div>
-    </body>
+    </div>
+</body>
 
-  
-</head>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Eduardo Neves. All rights reserved.</small>
+  </footer>
+
+
+</html>

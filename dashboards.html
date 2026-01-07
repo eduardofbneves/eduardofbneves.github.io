@@ -1,32 +1,45 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="images/icon_edu.png">
-    <script src="dashboards.js"></script>
-    <title>Dashboards - Eduardo Neves</title>
-    <header class="site-header" role="banner">
-        <nav class="navbar" aria-label="Primary Navigation">
-            <a href="index.html">
-                <img src="images/icon_edu.png" alt="eduardo_neves.png" class="logo">
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li class="nav_item"><a href="about.html">About</a></li>
-                <li class="nav_item"><a href="portfolio.html">Portfolio</a></li>
-                <li class="nav_item"><a href="dashboards.html">Dashboards</a></li>
-                <li class="nav_item"><a href="contacts.html">Contacts</a></li>
-            </ul>
-            <button type="contact_button" id="download_cv">Download CV</button>
-        </nav>
-    </header>
+  <title>Eduardo Neves | Data Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="dashboards.css">
+  <link rel="icon" type="image/x-icon" href="images/icon_edu.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="dashboard_tableau.js"></script>
 </head>
 
 <body>
+  <header class="site-header" role="banner">
+    <nav class="navbar" aria-label="Primary Navigation">
+        <a href="index.html">
+            <img src="images/icon_edu.png" alt="eduardo_neves.png" class="logo">
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a href="dashboards.html">Dashboards</a></li>
+          <li class="nav-item"><a href="contacts.html">Contacts</a></li>
+        </ul>
+        <div id="open-cv-div">
+            <a href="files/EduardoNeves_CV_EN.pdf" id="download_cv" target="_blank">Open CV</a>
+        </div>
+    </nav>
+  </header>
 
-  <h1>Israel-Palestine Conflict Through the Years</h1>
+  <main id="main" class="container">
+  <div class="dash-hero">
+    <h1>Dashboards</h1>
+  </div>
+  <hr>
+  <div class="israel-palestine-text">
+    <h2>Israel-Palestine Conflict Through the Years</h2>
 
-  <p>This dahsboard was built in a course on Communication with Data. The main objective was to develop a story through visualizations on a specific theme. THis was the compilation of the most relevant dashboard.</p>
-
+    <p>This dahsboard was built in a course on Communication with Data. The main objective was to develop a story through visualizations on a specific theme. THis was the compilation of the most relevant dashboard.</p>
+  </div>
   <div class='tableauPlaceholder' id='viz1740506745131' style='position: relative'>
     <noscript>
       <a href='#'>
@@ -47,6 +60,12 @@
     </object>
     <script src="dashboard_tableau.js"></script>
   </div>
-  <!--https://dash.plotly.com/deployment-->                
-</body>
+  <!--https://dash.plotly.com/deployment-->
+  </main>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Eduardo Neves. All rights reserved.</small>
+  </footer>
+
+
 </html>

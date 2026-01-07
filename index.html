@@ -2,55 +2,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eduardo Neves | Data Engineer</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="index.css">
-  <script src="script.js"></script>
   <link rel="icon" type="image/x-icon" href="images/icon_edu.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
 </head>
+
 <body>
-  <!-- Header -->
   <header class="site-header" role="banner">
-  <nav class="navbar" aria-label="Primary Navigation">
-      <a href="index.html">
-          <img src="images/icon_edu.png" alt="eduardo_neves.png" class="logo">
-      </a>
-      <ul class="nav-links" id="navLinks">
-        <li class="nav-item"><a href="about.html">About</a></li>
-        <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
-        <li class="nav-item"><a href="dashboards.html">Dashboards</a></li>
-        <li class="nav-item"><a href="contacts.html">Contacts</a></li>
-      </ul>
-      <button type="contact_button" id="download_cv">Download CV</button>
-  </nav>
+    <nav class="navbar" aria-label="Primary Navigation">
+        <a href="index.html">
+            <img src="images/icon_edu.png" alt="eduardo_neves.png" class="logo">
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a href="dashboards.html">Dashboards</a></li>
+          <li class="nav-item"><a href="contacts.html">Contacts</a></li>
+        </ul>
+        <div id="open-cv-div">
+            <a href="files/EduardoNeves_CV_EN.pdf" id="download_cv" target="_blank">Open CV</a>
+        </div>
+    </nav>
   </header>
-
-
-
-
   <!-- Main -->
   <main id="main" class="container">
     <!-- Hero -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-grid">
         <div class="hero-text">
-          <h1 id="hero-title">Building useful things, one small step at a time</h1>
+          <h1 id="hero-title">Eduardo Neves</h1>
+          <h2 id="hero-subtitle">Data Engineer</h2>
           <p class="lead">
-            This site gathers a few highlights—short notes about me, selected projects,
-            dashboards I’ve shared, and ways to get in touch.
+            Junior professional in the Data field with a experience in a variety of projects and themes.
           </p>
-          <div class="cta">
-            about.htmlAbout</a>
-            portfolio.htmlPortfolio</a>
-            <a href="dashboards.html"</a>
-          </div>
         </div>
+        <!--
         <figure class="hero-media" aria-hidden="true">
           <img src="assets/portrait"></img>
           <figcaption class="visually-hidden">Portrait</figcaption>
-        </figure>
+        </figure>-->
       </div>
     </section>
 
@@ -65,7 +59,7 @@
             <p class="muted">A brief intro, principles I work by, and a short timeline.</p>
           </div>
           <div class="card-actions">
-            about.htmlRead more</a>
+            <a href="about.html">Read more about my experience</a>
           </div>
         </article>
 
@@ -73,10 +67,10 @@
         <article class="card">
           <div class="card-body">
             <h3>Portfolio</h3>
-            <p class="muted">A curated list of projects and experiments. Some live, some documented.</p>
+            <p class="muted">A curated list of projects and experiments. From my thesis to my projects hosted in Github</p>
           </div>
           <div class="card-actions">
-            portfolio.htmlView portfolio</a>
+            <a href="portfolio.html">Check my journey and skills</a>
           </div>
         </article>
 
@@ -84,10 +78,10 @@
         <article class="card">
           <div class="card-body">
             <h3>Dashboards</h3>
-            <p class="muted">Interactive views and status pages. Focused on clarity and utility.</p>
+            <p class="muted">Interactive views and status pages integrated and hosted online.</p>
           </div>
           <div class="card-actions">
-            <a classds.htmlOpen dashboards</a>
+            <a href="dashboards.html">View dashboards</a>
           </div>
         </article>
 
@@ -95,36 +89,31 @@
         <article class="card">
           <div class="card-body">
             <h3>Contacts</h3>
-            <p class="muted">Reach out by email or connect on social. I’m happy to chat.</p>
+            <p class="muted">Reach out by email or connect on social. I’m happy to answer any questions or proposals.</p>
           </div>
           <div class="card-actions">
-            #contactGet in touch</a>
+            <a href="contacts.html">Connect with me</a>
           </div>
         </article>
 
-        <!-- CV -->
-        <article class="card">
-          <div class="card-body">
-            <h3>CV</h3>
-            <p class="muted">A compact summary of experience, tools, and selected work.</p>
-          </div>
-          <div class="card-actions">
-            cv.pdfDownload CV</a>
-          </div>
-        </article>
       </div>
     </section>
 
     <!-- Contact -->
     <section id="contact" class="section" aria-labelledby="contact-title">
       <div class="section-header">
-        <h2 id="contact-title">Contacts</h2>
-        <p class="muted">Prefer email? That works. Otherwise, you’ll find me on LinkedIn and GitHub.</p>
+        <h2 id="contact-title">Just trying to find my email?</h2>
+        <p id="contact-cta"> Just click the icon or copy the address below:</p>
+        <div id="mail-div">
+          <a href="mailto:eduardofbneves@gmail.com" id="mail-link">
+              <svg viewBox="0 0 8 6" xmlns="http://www.w3.org/2000/svg" id="email_icon">
+                  <path d="m0 0h8v6h-8zm.75 .75v4.5h6.5v-4.5zM0 0l4 3 4-3v1l-4 3-4-3z"/>
+              </svg>
+          </a>
+          <p class="icon-info">eduardofbneves@gmail.com</p>
       </div>
-      <div class="cta">
-        mailto:your.email@example.comEmail</a>
-        <a class="btn secondary" href="https://wwwinkedIn ↗"></a>
       </div>
+      
     </section>
   </main>
 

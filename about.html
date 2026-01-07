@@ -1,34 +1,34 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <title>Eduardo Neves | Data Engineer</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="about.css">
-  <title>About - Eduardo Neves</title>
   <link rel="icon" type="image/x-icon" href="images/icon_edu.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="script.js"></script>
-  <header class="site-header" role="banner">
-      <nav class="navbar" aria-label="Primary Navigation">
-          <a href="index.html">
-              <img src="images/icon_edu.png" alt="eduardo_neves.png" class="logo">
-          </a>
-          <ul class="nav-links" id="navLinks">
-              <li class="nav_item"><a href="about.html">About</a></li>
-              <li class="nav_item"><a href="portfolio.html">Portfolio</a></li>
-              <li class="nav_item"><a href="dashboards.html">Dashboards</a></li>
-              <li class="nav_item"><a href="contacts.html">Contacts</a></li>
-          </ul>
-          <!--<a href="files/EduardoNeves_CV_EN.pdf" download="EduardoNeves_CV_EN.pdf">-->
-          <button type="contact_button" id="download_cv" onclick="downloadCV()">Open CV</button>
-      </nav>
-  </header>
-
 </head>
 
 <body>
-  <!-- Meta -->
-  <meta name="about" content="About Eduardo Neves — Associate Data & AI Engineer focused on trustworthy datasets, pragmatic ETL, and clear dashboards." />
-  <link rel="iconlink rel="preconnect" href="https://fonts.gstaticnts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" relcripts/>
-</head>
+  <header class="site-header" role="banner">
+    <nav class="navbar" aria-label="Primary Navigation">
+        <a href="index.html">
+            <img src="images/icon_edu.png" alt="eduardo_neves.png" class="logo">
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a href="dashboards.html">Dashboards</a></li>
+          <li class="nav-item"><a href="contacts.html">Contacts</a></li>
+        </ul>
+        <div id="open-cv-div">
+            <a href="files/EduardoNeves_CV_EN.pdf" id="download_cv" target="_blank">Open CV</a>
+        </div>
+    </nav>
+  </header>
+
   <main id="main" class="container">
     <!-- Hero -->
     <section class="hero" aria-labelledby="about-title">
@@ -56,14 +56,13 @@
     <section class="card" aria-labelledby="bio-title">
       <h2 id="bio-title">Bio</h2>
       <p>
-        I care deeply about reliable pipelines and respectful data design. My work centers on
-        <strong>QoS datasets</strong>, <strong>smart traffic light integration</strong>, and making data
-        <em>explainable by default</em>. I prefer simple, observable ETL over fragile complexity, and dashboards that
-        trade noise for clarity. I’m happiest when data helps teams ship faster with fewer surprises.
+        I specialize in designing, evaluating, and deploying data‑driven and machine learning solutions for real‑world, non‑ideal environments. My work focuses on creating robust, scalable AI systems, with particular emphasis on Active Learning, human‑in‑the‑loop workflows, and metric‑driven model evaluation.
       </p>
       <p>
-        Outside the terminal, you’ll find me tuning metrics definitions, reviewing schema changes, or drying out flaky
-        cron jobs. I believe in guardrails, small diffs, and making problems visible early.
+        My technical strengths cover the full data and ML lifecycle: data extraction and analysis, feature engineering, model development, iterative experimentation, and performance validation across diverse datasets. I work extensively with Python, SQL, and modern ML frameworks, applying statistical rigor and engineering best practices to ensure reproducibility and reliability.
+      </p>
+      <p>
+        I have hands‑on experience with cloud platforms, containerization, and data engineering tools, enabling the transition from experimentation to production‑ready solutions. I also focus on clear data visualization and communication, supporting informed decision‑making for both technical and non‑technical stakeholders.
       </p>
     </section>
 
@@ -74,7 +73,7 @@
         <div>
           <h3>Data</h3>
           <ul>
-            <li>ETL, DW & Integration (Airflow, Azure, Pentaho, SQL)</li>
+            <li>ETL, DW & Integration (Airflow, Azure, Pentaho, SQL, Spark)</li>
             <li>ML & modelling (scikit-learn, PyTorch, TensorFlow, and Keras)</li>
             <li>Visualization & EDA using (Matplotlib, Seaborn, Plotly)</li>
           </ul>
@@ -94,7 +93,7 @@
           <ul>
             <li>Cloud services and infrastructure (AWS)</li>
             <li>GenAI (Azure, Google)</li>
-            <li>APIs & webhooks</li>
+            <li>Code management (GitHub)</li>
           </ul>
         </div>
       </div>
@@ -107,8 +106,8 @@
         <li>
           <div class="dot" aria-hidden="true"></div>
           <div class="content">
-            <h3>Associate Data Analyst</h3>
-            <p class="meta">2024–Present • Vila Nova de Gaia</p>
+            <h3>Data & AI Engineer</h3>
+            <p class="meta">09/2025–Present • Vila Nova de Gaia</p>
             <p>
               Built QoS datasets, automated freshness checks, and delivered operational dashboards for traffic systems,
               including smart traffic light integration to improve throughput and reduce delays.
@@ -118,8 +117,8 @@
         <li>
           <div class="dot" aria-hidden="true"></div>
           <div class="content">
-            <h3>Data Projects (freelance & personal)</h3>
-            <p class="meta">2023–2024</p>
+            <h3>Research Assistant</h3>
+            <p class="meta">09/2023–07/2024</p>
             <p>
               Modeled data for logistics and support flows, created ETL jobs with alerts, and produced decision-oriented
               visuals with Power BI and Python.
@@ -150,7 +149,7 @@
     -->
 
     <!-- Contact CTA -->
-    <section class="cta card" aria-labelledby="cta-title">
+    <section class="cta-card" aria-labelledby="cta-title">
       <h2 id="cta-title">Get to know me better</h2>
       <p>Visit the contacts page to see all my links or Open my CV to know more about my professional experience. Both at the top of the page. </p>
       <div class="cta-row">
@@ -161,12 +160,13 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <small>© <span id="year"></span> Eduardo Neves. All rights reserved.</small>
   </footer>
 
-
-
-</body>
+  <!-- Back to top 
+  <button id="toTop" class="to-top" aria-label="Back to top" title="Back to top">↑</button>
+</body>-->
 
 </html>

@@ -1,29 +1,102 @@
 
 :root {
   --bg: #0b0c10;
+  --bg-elev: #131720;
   --panel: #12141a;
   --text: #e6e6e6;
   --muted: #a0a6b2;
   --brand: #4f8cff;
-  --brand-2: #8a5cff;
+  --brand2: #0149cf;
   --border: #1f2430;
+  --boxes: #1f2430;
   --chip: #1a1f2b;
+  --radius: 12px;
+}
+
+/* Tags */
+body {
+  background: var(--bg);
+  height: 100vh;
+  margin: 0;
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  /*background: var(--bg);*/
+  color: var(--text);
+  line-height: 1.6;
+}
+
+* { 
+  box-sizing: border-box; 
+}
+
+hr {
+  height: 2px;
+  border-width: 0;
+  background-color: var(--text);
+}
+
+p {
+  color: #e6e6e6;
+}
+
+h1{
+  color: #e6e6e6;
+  font-size: clamp(1.8rem, 3vw, 2.4rem); 
+  margin: 0 0 0.5rem; 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem; /* Adds some breathing room between them */
+}
+
+nav{
+  display: flex;
+}
+
+a { 
+  color: var(--brand); 
+  text-decoration: none; 
+}
+
+/*
+a:hover { 
+  text-decoration: underline; 
+}
+*/
+
+img { 
+  max-width: 100%; 
+  display: block; 
+}
+
+/*-----Nav/Header----*/
+.site-header { 
+  position: sticky; 
+  top: 0; 
+  background: rgba(18,22,28,0.7); 
+  backdrop-filter: blur(8px); 
+  border-bottom: 1px solid var(--boxes); 
+  z-index: 999; 
 }
 
 .navbar {
   display: flex;
-  background: #0b0c10;
+  background: var(--boxes);
+  /*
   border-radius: 30px;
+  width: 95%;
+  */
   padding: 10px 20px;
   margin: 0 auto;
-  width: 95%;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
-  /*z-index: 9999;*/
 }
 
 .nav-links { 
@@ -53,107 +126,34 @@
   color: #0b0c10;
 }
 
-@media (max-width: 800px) {
-  .nav { 
-    grid-template-columns: auto 1fr auto; 
-  }
-  #menuToggle { 
-    justify-self: end; 
-  }
-  .nav-links {
-    display: none; 
-    position: absolute; 
-    right: 1rem; 
-    top: 56px; 
-    background: var(--bg-elev);
-    border: 1px solid var(--border); 
-    border-radius: 12px; 
-    padding: 0.5rem; 
-    box-shadow: var(--shadow);
-    flex-direction: column; 
-    min-width: 220px;
-  }
-  .nav-links.open { 
-    display: flex; 
-  }
-}
-
-.nav-links a.active { 
-  background: #e6e6e6; 
-}
-
-.menu {
-  display: flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.item {
-  margin: 0 15px;
-}
-
-.item a {
-  text-decoration: none;
-  color: #ebebeb;
-  font-weight: bold;
-}
-
-.item a:hover {
-  color: #2258c3;
-}
-
-body {
-  background: #0b0c10;
-  height: 100vh;
-  margin: 0;
-  padding-top: 10px;
-  margin: 0;
-  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  /*background: var(--bg);*/
-  color: var(--text);
-  line-height: 1.6;
-}
-
-p {
-  color: #e6e6e6;
-}
-
-h1{
-  color: #e6e6e6;
-}
-
-button {
-  background-color: #2258c3;
+/*--CV Button--*/
+#open-cv-div a {
+  background-color: var(--brand);
   color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
   cursor: pointer;
+  border-radius: var(--);
 }
 
-button:hover {
-  background-color: #003cb5;
+#open-cv-div a:hover {
+  background-color: var(--brand2);
+  color: var(--text);
 }
 
 .navbar ul{
   display: flex;  /*Lines up the list items in a row */
-  
 }
 
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  gap: 1rem; /* Adds some breathing room between them */
-}
-
-nav{
-  display: flex;
-}
 
 /* Enhancements */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
 .menu-toggle { 
   display:none; 
   border:1px solid var(--border); 
@@ -170,45 +170,6 @@ nav{
   align-items:center; 
 }
 
-.kpis { 
-  display:flex; 
-  gap:18px; 
-  flex-wrap:wrap; 
-  margin:16px 0; 
-}
-
-.kpi { 
-  background: var(--panel); 
-  border:1px solid var(--border); 
-  border-radius:12px; 
-  padding:10px 12px; 
-}
-
-.kpi .num { 
-  font-weight:800; 
-  font-size:1.15rem; 
-}
-
-.kpi .label { 
-  display:block; 
-  color: var(--muted); 
-  font-size:.9rem; 
-}
-
-.pill-row { 
-  display:flex; 
-  flex-wrap:wrap; 
-  gap:10px; 
-  margin-top:12px; 
-}
-
-.pill { 
-  background: var(--chip); 
-  border:1px solid var(--border); 
-  border-radius:999px; 
-  padding:6px 12px; 
-}
-
 .visually-hidden { 
   position:absolute !important; 
   height: 1px; 
@@ -221,25 +182,33 @@ nav{
   border: 0;
 }
 
-
-.to-top { 
-  position:fixed; 
-  right:16px; 
-  bottom:16px; 
-  padding:10px 12px; 
-  border-radius:999px; 
-  border:1px solid var(--border); 
-  background: var(--panel); 
-  color: var(--text); 
-  display:none; 
-}
-
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 2rem 1.25rem;
   color: var(--muted);
   text-align: center;
 }
+
+#toTop {
+  position: fixed; 
+  right: 1rem; 
+  bottom: 1rem; 
+  display: none;
+  border: 1px solid var(--border); 
+  background: var(--bg-elev); 
+  color: var(--text);
+  border-radius: 999px; 
+  width: 42px; 
+  height: 42px; 
+  cursor: pointer; 
+  box-shadow: var(--shadow);
+}
+
+#toTop.show { 
+  display: grid; 
+  place-items: center; 
+}
+
 
 @media (max-width: 860px) {
   .menu-toggle { 
@@ -271,23 +240,37 @@ nav{
   }
 }
 
-
-#toTop {
-  position: fixed; 
-  right: 1rem; 
-  bottom: 1rem; 
-  display: none;
-  border: 1px solid var(--border); 
-  background: var(--bg-elev); 
-  color: var(--text);
-  border-radius: 999px; 
-  width: 42px; 
-  height: 42px; 
-  cursor: pointer; 
-  box-shadow: var(--shadow);
+@media (max-width: 800px) {
+  .nav { 
+    grid-template-columns: auto 1fr auto; 
+  }
+  #menuToggle { 
+    justify-self: end; 
+  }
+  .nav-links {
+    display: none; 
+    position: absolute; 
+    right: 1rem; 
+    top: 56px; 
+    background: var(--bg-elev);
+    border: 1px solid var(--border); 
+    border-radius: 12px; 
+    padding: 0.5rem; 
+    box-shadow: var(--shadow);
+    flex-direction: column; 
+    min-width: 220px;
+  }
+  .nav-links.open { 
+    display: flex; 
+  }
 }
 
-#toTop.show { 
-  display: grid; 
-  place-items: center; 
+.item {
+  margin: 0 15px;
+}
+
+.item a {
+  text-decoration: none;
+  color: #ebebeb;
+  font-weight: bold;
 }

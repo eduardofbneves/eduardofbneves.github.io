@@ -123,7 +123,6 @@ async function loadRepos({ reset = false } = {}) {
   }
 
   state.loading = true;
-  setStatus('Loading repositories…');
 
   const key = `gh:repos:${CONFIG.username}:page:${state.page}:per:${CONFIG.perPage}`;
   const cached = cacheGet(key);
@@ -199,7 +198,7 @@ function repoCardHTML(r) {
   return `
   <article class="repo-card">
     <div class="repo-info">
-      <h3><a href=${r.html_url}>${r.name}</a></h3>
+      <h3><a href=${r.html_url} target="_blank">${r.name}</a></h3>
       <p>${desc}</p>
       <div class="badges">
         <p>${r.language}</p> 
