@@ -13,6 +13,28 @@ img {
   display: block; 
 }
 
+#email-icon{
+  width: 60px;
+  height: 60px;
+  max-width: 100%;
+  fill: var(--brand);
+  margin-right: 1em;
+}
+
+#mail-div {
+  flex-wrap: wrap; 
+  text-align: left;
+  display: flex;
+}
+
+#mail-link {
+  display: flex; 
+}
+
+#contact-cta {
+  margin-top: 0;
+  padding: 0;
+}
 
 .container { 
   max-width: 1100px; 
@@ -140,25 +162,3 @@ img {
   box-shadow: var(--shadow); 
 }
 
-#email-icon{
-  width: 60px;
-  height: 60px;
-  max-width: 100%;
-  fill: var(--brand);
-  margin-right: 1em;
-}
-
-#mail-div {
-  flex-wrap: wrap; 
-  text-align: left;
-  display: flex;
-}
-
-#mail-link {
-  display: flex; 
-}
-
-#contact-cta {
-  margin-top: 0;
-  padding: 0;
-}
