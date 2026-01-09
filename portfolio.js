@@ -102,7 +102,7 @@ function renderProfile(u) {
   if (bioEl) bioEl.textContent = bio;
   if (linkEl) linkEl.href = html;
   if (followersEl) followersEl.textContent = `${u.followers ?? '—'} followers`;
-  if (reposEl) reposEl.textContent = `${u.public_repos ?? '—'} repos`;
+  if (reposEl) reposEl.textContent = `${u.public_repos ?? '—'} public repos:`;
 }
 
 /* ===== Repos with pagination ===== */
@@ -196,20 +196,22 @@ function repoCardHTML(r) {
   // ? `<span class="badge">${r.language}</span>` : ''}
   // <p> ${topics.map(t => `<p>#${t}</p>`).join('')}
   return `
-  <article class="repo-card">
-    <div class="repo-info">
-      <h3><a href=${r.html_url} target="_blank">${r.name}</a></h3>
-      <p>${desc}</p>
-      <div class="badges">
-        <p>${r.language}</p> 
+  <a href=${r.html_url} target="_blank">
+    <article class="repo-card">
+      <div class="repo-info">
+        <h3>${r.name}</h3>
+        <p>${desc}</p>
+        <div class="badges">
+          <p>${r.language}</p> 
+        </div>
+        <div class="repo-meta">
+          <span>★ ${r.stargazers_count ?? 0}</span>
+          <span>⑂ ${r.forks_count ?? 0}</span>
+          <span>Updated ${updated}</span>
+        </div>
       </div>
-      <div class="repo-meta">
-        <span>★ ${r.stargazers_count ?? 0}</span>
-        <span>⑂ ${r.forks_count ?? 0}</span>
-        <span>Updated ${updated}</span>
-      </div>
-    </div>
-  </article>`;
+    </article>
+  </a>`;
 }
 /*
     <div class="repo-actions">

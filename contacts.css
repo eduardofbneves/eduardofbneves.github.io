@@ -1,16 +1,16 @@
-#email_icon{
+.icon-images {
   width: 60px;
+  height: 60px;
   max-width: 100%;
   fill: var(--brand);
   margin-right: 1em;
 }
 
-#loc_icon{
-  width: 60px;
-  height: 60px;
-  max-width: 100%;
-  fill: var(--brand);;
-  margin-right: 1em;
+.icons-div {
+  color: var(--text);
+  margin: auto;
+  text-align: left;
+  display: flex;
 }
 
 .icon-info {
@@ -49,8 +49,9 @@
   padding-right: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
-  line-height: 25px;
+
 }
+
 
 .arch_contact_us_duplicate .responsive-container-block {
   min-height: 75px;
@@ -69,8 +70,10 @@
   justify-content: flex-start;
 }
 
+
 .arch_contact_us_duplicate .responsive-cell-block {
   min-height: 75px;
+  margin-top: 2.5rem;
 }
 
 .arch_contact_us_duplicate .responsive-container-block.big-container {
@@ -81,6 +84,8 @@
   padding-right: 50px;
   padding-bottom: 0px;
   padding-left: 50px;
+  display: flex;
+  vertical-align: middle;
 }
 
 .arch_contact_us_duplicate .responsive-container-block.container {
@@ -88,7 +93,8 @@
   justify-content: space-evenly;
 }
 
-.arch_contact_us_duplicate .text-blk.section-head {
+
+#section-head {
   font-size: 60px;
   line-height: 65px;
   margin-top: 0px;
@@ -97,7 +103,7 @@
   margin-left: 0px;
 }
 
-.arch_contact_us_duplicate .text-blk.section-subhead {
+#section-subhead {
   font-size: 14px;
   line-height: 18px;
   color: #7e7e7e;
@@ -184,11 +190,14 @@
   display: flex;
   max-width: 400px;
   justify-content: space-evenly;
+  align-items: left;
 }
 
 
 .arch_contact_us_duplicate .icon-block.social-icon {
   fill: var(--brand);
+  width: 50px;
+  height: 50px;
 }
 
 @media (max-width: 1024px) {
@@ -203,14 +212,16 @@
 }
 
 @media (max-width: 768px) {
-  .arch_contact_us_duplicate .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-ipadp-6.wk-desk-5 {
+  .arch_contact_us_duplicate .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-ipadp-6.wk-desk-5 
+  {
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 80px;
     margin-left: 0px;
   }
 
-  .arch_contact_us_duplicate .responsive-cell-block.wk-mobile-12.wk-ipadp-6.wk-desk-5.wk-tab-10 {
+  .arch_contact_us_duplicate .responsive-cell-block.wk-mobile-12.wk-ipadp-6.wk-desk-5.wk-tab-10 
+  {
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 80px;
