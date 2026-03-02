@@ -4,44 +4,10 @@
   padding: 2rem 1.25rem;
 }
 
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: var(--brand);
-  color: white;
-  padding: 0.5rem 1rem;
-  z-index: 1000;
-  border-radius: 6px;
-}
-
 .skip-link:focus { 
   top: 10px; 
 }
 
-
-/* Mobile nav */
-@media (max-width: 800px) {
-  .nav { grid-template-columns: auto auto auto; }
-  #menuToggle { justify-self: end; }
-  .nav-links {
-    display: none;
-    position: absolute;
-    right: 1rem;
-    top: 56px;
-    background: var(--bg-elev);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 0.5rem;
-    box-shadow: var(--shadow);
-    flex-direction: column;
-    min-width: 200px;
-  }
-  .nav-links.open { 
-    display: flex; }
-}
-
-/* --- Hero --- */
 .hero-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -207,15 +173,5 @@
   gap: 0.6rem; 
   flex-wrap: wrap; 
   margin: 0.8rem 0 0.4rem; 
-}
-
-
-
-/* --- Motion reduce --- */
-@media (prefers-reduced-motion: reduce) {
-  * { 
-    animation: none !important; 
-    transition: none !important; 
-  }
 }
 

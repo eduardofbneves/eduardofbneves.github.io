@@ -214,54 +214,70 @@ img {
   .menu-toggle { 
     display:inline-block; 
   }
-
-  .nav-links { 
-    display:none; 
-    position:absolute; 
-    right:16px; 
-    top:56px; 
+  /* anchor nav and hide links on small screens; dropdown will be centered under the toggle */
+  .nav { position: relative; }
+  .nav .nav-links { 
+    display: none !important; 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100% + 6px);
     background: var(--panel); 
-    border:1px solid var(--border); 
-    border-radius:12px; 
-    padding:12px; 
+    border: 1px solid var(--border); 
+    border-radius: 12px; 
+    padding: 12px; 
     box-shadow: var(--shadow); 
+    z-index: 1000;
+    min-width: 180px;
   }
 
-  .nav-links.show { 
-    display:flex; 
-    flex-direction:column; 
-    gap:12px; 
+  .nav .nav-links.show { 
+    display: flex !important; 
+    flex-direction: column; 
+    gap: 12px; 
+  }
+  
+  /* center the hamburger and keep it above other elements */
+  .nav .menu-toggle {
+    justify-self: center;
+    align-self: center;
+    z-index: 1101;
+    pointer-events: auto;
   }
 
   .hero-grid { 
-    grid-template-columns  .hero-grid { 
-      grid-template-columns: 1fr; 
-    }
+    grid-template-columns: 1fr; 
   }
 }
 
 @media (max-width: 800px) {
   .nav { 
-    grid-template-columns: auto 1fr auto; 
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
   }
   #menuToggle { 
-    justify-self: end; 
+    justify-self: center; 
   }
-  .nav-links {
-    display: none; 
-    position: absolute; 
-    right: 1rem; 
-    top: 56px; 
+  .nav .nav-links {
+    display: none !important;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100% + 6px);
     background: var(--bg-elev);
-    border: 1px solid var(--border); 
-    border-radius: 12px; 
-    padding: 0.5rem; 
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0.5rem;
     box-shadow: var(--shadow);
-    flex-direction: column; 
-    min-width: 220px;
+    flex-direction: column;
+    min-width: 200px;
+    z-index: 1000;
   }
-  .nav-links.open { 
-    display: flex; 
+  .nav .nav-links.show { 
+    display: flex !important; 
   }
 }
 

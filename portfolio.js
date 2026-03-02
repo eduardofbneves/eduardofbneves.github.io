@@ -205,8 +205,8 @@ function repoCardHTML(r) {
           <p>${r.language}</p> 
         </div>
         <div class="repo-meta">
-          <span>★ ${r.stargazers_count ?? 0}</span>
-          <span>⑂ ${r.forks_count ?? 0}</span>
+          <span>★ ${r.stargazers_count ?? 0} </span>
+          <span>⑂ ${r.forks_count ?? 0} </span>
           <span>Updated ${updated}</span>
         </div>
       </div>
