@@ -72,6 +72,13 @@ img {
   display: block; 
 }
 
+.logo{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  max-width: none;
+}
+
 /*-----Nav/Header----*/
 .site-header { 
   position: sticky; 
